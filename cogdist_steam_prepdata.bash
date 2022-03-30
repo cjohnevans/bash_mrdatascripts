@@ -10,7 +10,7 @@
 
 #define the top level directory, paths are relative to this.  Needs trailing '/'
 dcm_top_dir='/home/sapje1/scratch_sapje1/projects/396_cogdist/steam/'
-dcm_path=$dcm_top_dir"*/*/scans/*/resources/secondary/*.dcm"
+dcm_path=$dcm_top_dir"raw/*/*/scans/*/resources/secondary/*.dcm"
 
 if [ -d $dcm_top_dir'sort' ]; then
     echo $dcm_top_dir'sort' "exists.  Removing."
