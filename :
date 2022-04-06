@@ -1,0 +1,10 @@
+#!/bin/bash
+#   quick quality control check of DICOM Siemens data using Tarquin
+#   reports CRLB% for tNAA and tCr, FWHM(Hz) and SNR
+
+if [ $# -e 1]
+then
+    echo "one arg"
+fi
+
+

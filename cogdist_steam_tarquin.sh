@@ -28,10 +28,3 @@ for ppt_dir in $dcm_top_dir/* ; do
     fi
 done
 
-mrs_id='300321-401__21_03_30__LeftThalamus_svs_steam'
-met_dcm=$mrs_id'.dcm'
-wat_dcm=$mrs_id'_ref.dcm'
-pdf_name=$mrs_id'.pdf'
-csv_name=$mrs_id'.csv'
-
-#/cubric/software/tarquin/tarquin --input $met_dcm --input_w $wat_dcm --output_pdf $pdf_name --ext_pdf true --output_csv $csv_name 
