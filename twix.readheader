@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#extract the header from binary
+head -c 10000000 $1 > /tmp/twixtmp.dat
+
+#convert
+strings /tmp/twixtmp.dat > /tmp/twixtmp.hdr
+cat /tmp/twixtmp.hdr | grep PatientID | head -n 1
+cat /tmp/twixtmp.hdr | grep tPatientName  | head -n 1
+cat /tmp/twixtmp.hdr | grep PatientBirthDay  | head -n 1
+cat /tmp/twixtmp.hdr | grep DeviceSerialNumber  | head -n 1
+cat /tmp/twixtmp.hdr | grep ProtocolName  | head -n 1
+cat /tmp/twixtmp.hdr | grep SequenceFileName  | head -n 1
+
+rm /tmp/twixtmp.hdr
+rm /tmp/twixtmp.dat
+
